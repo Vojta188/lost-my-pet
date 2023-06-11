@@ -1,4 +1,4 @@
+import img1 from "../src/components/imgSearchPet/dog.jpg"
+const DataSearch = [{name: "Filip", img:img1,animal: "pes", rasa:"terier",city:"Praha"}];
 
-const DataSeach = [{name: "Filip",animal: "pes", rasa:"terier",město:"Praha"}];
-
-export default DataSeach
+export default DataSearch

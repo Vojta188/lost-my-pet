@@ -1,0 +1,31 @@
+.logo{
+    color: 715800;
+}
+nav {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.link {
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+.nonactiveLink{
+    color: black;
+    
+}
+.activeLink{
+    color: orange;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.logo{
+    color: #715800;
+}

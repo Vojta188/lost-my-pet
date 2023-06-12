@@ -9,10 +9,10 @@ const Searching = () => {
 
         <section className="all-pet">
           {DataSearch.map((onePet)=>{
-           const {name,img,animal,rasa,city} = onePet 
+           const {id,name,img,animal,rasa,city} = onePet 
 
-            return <article className="one-pet">
-              <img src ={img} ></img>
+            return <article key={id} className="one-pet">
+              <img src ={img} alt="" ></img>
               <h2>{name}</h2>
               <p>{animal}</p>
               <p>{rasa}</p>

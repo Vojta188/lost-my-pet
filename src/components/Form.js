@@ -41,15 +41,15 @@ const Form = () => {
 
 
         {
-          allAnimal.map((oneAnimal=>{
+          allAnimal.map((oneAnimal,index)=>{
             const {name,animal,rasa,city} = oneAnimal
-            return<div>
+            return<div key={index}>
               <h1>{name}</h1>
               <p>{animal}</p>
               <p>{rasa}</p>
               <p>{city}</p>
             </div>
-          }))
+          })
         }
     </div>
   )

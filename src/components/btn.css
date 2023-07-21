@@ -1,0 +1,42 @@
+.btn{
+    text-align: center;
+    
+}
+.button-two{
+    margin: 30px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid white;
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size:12px;
+    transition: 0.3s;
+    
+}
+.button-two:hover::after,.button-one:hover::after{
+    content: " >>> ";
+    transition-duration: 5s;
+
+}
+
+.button-one{
+    margin: 10px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid gray;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    font-size:12px;
+    box-shadow: 1px 1px 1px 1px rgb(68, 68, 68);
+    transition: 4s;
+    transition-duration: 10s;
+}
+
+
+

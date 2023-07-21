@@ -1,4 +1,9 @@
-import img1 from "../src/components/imgSearchPet/dog.jpg"
-const DataSearch = [{name: "Filip", img:img1,animal: "pes", rasa:"terier",city:"Praha"}];
 
-export default DataSearch
+  //  const data = await fetch("http://localhost:3001/getData");
+  //  const finalData = await data.json();
+  //  const{msg,documents} = finalData;
+  //  const DataSearch = documents
+
+
+
+// export default DataSearch

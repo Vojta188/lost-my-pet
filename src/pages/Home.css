@@ -1,8 +1,9 @@
-
 body{
-    margin: 0;
-    background-color: #DFDFDF;
+  background-image: url("../components/img/main.png");
+  background-size: 100%;
+  background-color: rgb(126, 126, 126);
 }
+
 .form{
-    background-color: white;
+  background-color: white;
 }

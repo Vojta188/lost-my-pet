@@ -7,7 +7,7 @@ import img from "../components/img/main.jpeg"
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <header className="header-home" >
       <Navbar />
         <MainImg />

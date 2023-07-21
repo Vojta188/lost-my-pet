@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .one-pet{
@@ -15,8 +16,28 @@
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    color: orange;
+    font-size: 18px;
+    font-weight: 400;
+}
+.label{
+    color: white;
+    font-style:initial;
+    font-size: 18px;
+    text-decoration: underline;
 }
 
 .one-pet img{
     width: 100%;
+}
+
+.btn-contact{
+    padding: 8px;
+    margin: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgb(255, 193, 79) 1px 1px 1px 1px;
+    color: gray;
+    font-weight: bold;
 }

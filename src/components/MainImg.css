@@ -17,6 +17,7 @@
     text-align: center;
     position: relative;
     
+    
 }
 
 
@@ -29,27 +30,33 @@
     opacity: 0.5;
     transition: all 0.5s linear;
     
+    
 }
 
 
 .all-img-content img {
     width: 100%;
     height: 500px;
+    border-radius: 5% 5% 5% 5%;
+    border: solid none;
+    
 }
 
 article.active-slide {
     opacity: 1;
     transform: translateX(0%);
+    
+    
 }
 
 
 article.last-slide {
-    opacity: 0.5;
+    opacity: 0.1;
     transform: translateX(0%);
 }
 
 
 article.next-slide {
-    opacity: 0.5;
+    opacity: 0.1;
     transform: translateX(0%)
 }

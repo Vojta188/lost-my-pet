@@ -31,15 +31,15 @@ return (
             return <article key={index} className="one-pet">
               <img src ={photo} alt="" ></img>
               
-              <label for="name"  >Jméno</label>
-              <h2 id="name">{name}</h2>
-              <label for = "animal">Zvíře</label>
+              <label for="name" className="label"  >Jméno</label>
+              <p id="name">{name}</p>
+              <label for = "animal" className="label">Zvíře</label>
               <p id="animal">{animal}</p>
-              <label for = "rasa">Rasa</label>
+              <label for = "rasa" className="label">Rasa</label>
               <p id="rasa">{rasa}</p>
-              <label for = "city">Město</label>
+              <label for = "city" className="label">Město</label>
               <p id="city">{city}</p>
-              <button onClick={() => setOpenContact(!openContact)}>Zobrazit kontaktní údaje</button>
+              <button className="btn-contact" onClick={() => setOpenContact(!openContact)}>Zobrazit kontaktní údaje</button>
               {openContact && <div>
                 <p>{callNumber}</p>
                 <p>{email}</p>

@@ -10,14 +10,18 @@ const Home = () => {
     <div className="home">
       <header className="header-home" >
       <Navbar />
-        <MainImg />
+      
         <Btn />
       </header>
+      <article>
+      
+      
         <div className="form">
+        <MainImg />
         <Form />
         </div>
         
-
+        </article>
     </div>
   )
 }

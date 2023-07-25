@@ -1,17 +1,19 @@
 .home{
   background-image: url("../components/img/main.png");
   background-size: 100%;
-  background-color: rgb(126, 126, 126);
+  background-color: black;
   border: none;
   position: absolute;
   margin: 0;
   width: 100%;
+  
+  
 }
 
 .form{
-  background-color: white;
+  background-color: rgb(151, 171, 158);
 }
 
 body{
-  background-color:rgb(130, 130, 116);
+  background-color:rgb(151, 171, 158);
 }

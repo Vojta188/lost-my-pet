@@ -9,7 +9,9 @@
   
   
 }
-
+.header-home{
+  height: 550px;
+}
 .form{
   background-color: rgb(151, 171, 158);
 }

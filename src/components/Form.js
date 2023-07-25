@@ -11,21 +11,7 @@ const Form = () => {
   const[email,setEmail] = useState("")
   const[allAnimal,setAllAnimal] = useState([])
 
-  const AddDB=()=>{
-    fetch("http://localhost:3001/saveData",{
-      method:"post",
-      headers:{
-        "Accept":"application/json",
-        "Content-type":"application/json"
-      },
-      body:JSON.stringify({name:name},{animal:animal},{rasa:rasa},{city:city},
-        {callNumber:phonenumber},{email:email})
-    }).then((data) => { 
-      return data.json()
-     }).then((finalData) => { 
-      console.log(finalData)
-     })
-  }
+  
 
   const formSubmit=(event)=>{
     event.preventDefault()
@@ -75,7 +61,7 @@ const Form = () => {
         <input className="MainInput" value={city} onChange={(event)=>setCity(event.target.value)} type="text" placeholder="Město..." /><br/>
         <input className="MainInput" value={phonenumber} onChange={(event)=>setPhonenumber(event.target.value)} type="number" placeholder="Telefon..." /><br/>
         <input className="MainInput" value={email} onChange={(event)=>setEmail(event.target.value)} type="email" placeholder="Email..." /><br/>
-        <label for="file-photo" className="file">Přidat fotku</label>
+        <label  className="file">Přidat fotku</label>
         <input id="file-photo" type="file"  /><br/>
         <input className="form-submit" type="submit" />
         </form>

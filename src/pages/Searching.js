@@ -6,7 +6,7 @@ const Searching = () => {
 
 const [DataSearch, setDataSearch] = useState([]);
 const [openContact,setOpenContact] = useState(false)
-const[contact,setContact] = useState("")
+
 
 
 const addData = async()=>{

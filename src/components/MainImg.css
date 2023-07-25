@@ -37,7 +37,7 @@
 .all-img-content img {
     width: 100%;
     height: 500px;
-    
+    margin-top: 50px;
     border: solid none;
     
 }

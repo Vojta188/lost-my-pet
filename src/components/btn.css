@@ -38,6 +38,7 @@
     box-shadow: 1px 1px 1px 1px rgb(68, 68, 68);
     transition: 4s;
     transition-duration: 10s;
+    
 }
 
 
@@ -45,8 +46,10 @@
 .main-txt
 {
     color: white;
-    font-size: 3rem;
+    font-size: 35px;
     font-weight:bolder ;
     line-height: 0.9;
     -webkit-text-stroke: 1px black;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }

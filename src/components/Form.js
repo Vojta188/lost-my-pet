@@ -7,7 +7,7 @@ const Form = () => {
   const [animal, setAnimal] = useState("")
   const[rasa,setRasa] = useState("")
   const[city,setCity] = useState("")
-  const[phonenumber,setPhonenumber] = useState("")
+  const[phonenumber,setPhonenumber] = useState("+420")
   const[email,setEmail] = useState("")
   const[allAnimal,setAllAnimal] = useState([])
 
@@ -46,7 +46,7 @@ const Form = () => {
     setAnimal("")
     setRasa("")
     setCity("")
-    setPhonenumber("")
+    setPhonenumber("+420")
     setEmail("")
 
    

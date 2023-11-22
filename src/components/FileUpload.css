@@ -1,5 +1,6 @@
 .file_upload{
-    border: solid black;
+    border: solid 1px black;
+    margin-right: 5px;
     padding: 5px;
     background-color: #F5AA65;
     border-radius: 7px;
@@ -10,6 +11,17 @@
     background-color: rgb(127, 214, 127);
     border-radius: 7px;
     box-shadow: 1px 2px grey;
-    padding: 7px;
-    border: solid black;
+    padding: 6px;
+    border: solid 1px black;
+}
+.file_size
+{
+ font-size: 15px;
+ color: black;
+ font-weight: 600;
+ 
+}
+.file_div
+{
+    margin-top: 20px;
 }

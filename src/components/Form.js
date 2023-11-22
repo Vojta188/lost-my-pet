@@ -12,7 +12,7 @@ const Form = () => {
   const[email,setEmail] = useState("")
   const[allAnimal,setAllAnimal] = useState([])
 
-  
+ 
 
   const formSubmit=(event)=>{
     event.preventDefault()
@@ -62,7 +62,6 @@ const Form = () => {
         <input className="MainInput" value={city} onChange={(event)=>setCity(event.target.value)} type="text" placeholder="Město..." /><br/>
         <input className="MainInput" value={phonenumber} onChange={(event)=>setPhonenumber(event.target.value)} type="number" placeholder="Telefon..." /><br/>
         <input className="MainInput" value={email} onChange={(event)=>setEmail(event.target.value)} type="email" placeholder="Email..." /><br/>
-        <label for="file-photo" className="file">Přidat fotku</label>
         <FileUpload /><br/>
         <input className="form-submit" type="submit" />
         </form>

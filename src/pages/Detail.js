@@ -7,7 +7,6 @@ import Navbar from '../components/Navbar'
 const Detail = () => {
     const {detailId} = useParams()
     const [DataSearch,setDataSearch] = useState([])
-    const [detail, setDetail] = useState("wait")
   
 
     
@@ -38,7 +37,7 @@ const Detail = () => {
     
      if (oneSpecificDetail)
        {
-        const {_id,name,photo,rasa,city, callNumber,email} = oneSpecificDetail
+        const {name,photo,rasa,city, callNumber,email} = oneSpecificDetail
         
       
   return (
@@ -46,7 +45,7 @@ const Detail = () => {
       <Navbar />
       <div className='all-detail'>
       <div className='one-detail'>
-      <img src={photo}></img>
+      <img src={photo} alt='prop' />
       <h2>{name}</h2>
       <p>{rasa}</p>
       <p>{city}</p>

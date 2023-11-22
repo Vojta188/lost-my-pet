@@ -33,8 +33,8 @@
 .btn-local
 {
     background-color: #F5DE65;
-    width: 355px;
-    height: 68px;
+    width: 255px;
+    height: 50px;
     border-style: black;
     border-width: 2px;
     border-radius: 10px;
@@ -44,8 +44,8 @@
 
 .btn-my-pet{
  background-color: #69CF67;
- width: 355px;
- height: 68px;
+ width: 250px;
+ height: 50px;
  margin-top:20px;
  border-style: black;
  border-width: 2px;

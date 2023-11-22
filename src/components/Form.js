@@ -1,5 +1,6 @@
 import "./Form.css"
 import { useState } from "react"
+import FileUpload from "./FileUpload"
 
 const Form = () => {
 
@@ -54,18 +55,20 @@ const Form = () => {
 
   return (
     <div className="formMain">
-        <form onSubmit={formSubmit}>
+        <form onSubmit={formSubmit} action="http://localhost:3000/upload" method="POST">
         <input className="MainInput" value={name} onChange={(event)=>setName(event.target.value)} type="text" placeholder="Jméno zvířete..." /><br/>
         <input className="MainInput" value={animal} onChange={(event)=>setAnimal(event.target.value)} type="text" placeholder="Zvíře..." /><br/>
         <input className="MainInput" value={rasa} onChange={(event)=>setRasa(event.target.value)} type="text" placeholder="Rasa..." /><br/>
         <input className="MainInput" value={city} onChange={(event)=>setCity(event.target.value)} type="text" placeholder="Město..." /><br/>
         <input className="MainInput" value={phonenumber} onChange={(event)=>setPhonenumber(event.target.value)} type="number" placeholder="Telefon..." /><br/>
         <input className="MainInput" value={email} onChange={(event)=>setEmail(event.target.value)} type="email" placeholder="Email..." /><br/>
-        <label  className="file">Přidat fotku</label>
-        <input id="file-photo" type="file"  /><br/>
+        <label for="file-photo" className="file">Přidat fotku</label>
+        <FileUpload /><br/>
         <input className="form-submit" type="submit" />
         </form>
 
+   
+    
 
 
         {
@@ -81,6 +84,7 @@ const Form = () => {
             </div>
           })
         }
+
     </div>
   )
 }

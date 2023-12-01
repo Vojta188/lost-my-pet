@@ -28,6 +28,9 @@ addData()
 
 },[])
 
+
+const road = "/Users/vojtechvrabec/Documents/uploads/file-"
+
 return (
     <div>
       
@@ -35,11 +38,11 @@ return (
 
         <section className="all-pet">
           {DataSearch.map((onePet,index)=>{
-           const {_id,name,photo,animal,rasa,city, callNumber,email} = onePet 
+           const {_id,name,file,animal,rasa,city, callNumber,email} = onePet 
 
             return <article key={index} className="one-pet">
-              <img src ={photo} alt="" ></img>
-              
+              <img src ={road + file} alt="animal"></img>
+              { console.log(road + file)}
               <label  className="label"  >Jméno</label>
               <p id="name">{name}</p>
               <label className="label">Zvíře</label>

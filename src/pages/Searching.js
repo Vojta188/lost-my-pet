@@ -29,7 +29,7 @@ addData()
 },[])
 
 
-const road = "/Users/vojtechvrabec/Documents/uploads/file-"
+const road = "images/file-"
 
 return (
     <div>
@@ -42,7 +42,7 @@ return (
 
             return <article key={index} className="one-pet">
               <img src ={road + file} alt="animal"></img>
-              { console.log(road + file)}
+              {console.log(road + file)}
               <label  className="label"  >Jméno</label>
               <p id="name">{name}</p>
               <label className="label">Zvíře</label>

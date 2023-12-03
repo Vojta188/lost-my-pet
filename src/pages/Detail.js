@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 const Detail = () => {
     const {detailId} = useParams()
     const [DataSearch,setDataSearch] = useState([])
-  
+    const road = "http://localhost:3000/images/file-"
 
     
 
@@ -33,19 +33,20 @@ const Detail = () => {
       
      })
 
-       
+    
     
      if (oneSpecificDetail)
        {
-        const {name,photo,rasa,city, callNumber,email} = oneSpecificDetail
-        
+        const {name,file,rasa,city, callNumber,email} = oneSpecificDetail
+       
       
   return (
     <section >
       <Navbar />
       <div className='all-detail'>
       <div className='one-detail'>
-      <img src={photo} alt='prop' />
+      <img src ={road + file} alt="animal"></img>
+      {console.log(road+file)}
       <h2>{name}</h2>
       <p>{rasa}</p>
       <p>{city}</p>

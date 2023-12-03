@@ -133,7 +133,6 @@ useEffect(()=>{
         <input className="MainInput" value={email} onChange={(event)=>setEmail(event.target.value)} type="email" placeholder="Email..." /><br/>
         <label className='file_upload' for="file">Vybrat Soubor</label>
         <input id='file' type="file" onChange={handleFileChange} />
-        <button className='btn_file' onClick={handleUpload}>Nahrát soubor</button><br/>
       
         <p className='file_size'>{getMetadata}</p>
         

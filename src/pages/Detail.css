@@ -12,6 +12,9 @@
     font-weight: 400;
     background-color:#F5AA65 ;
 }
+
+
+
 .all-detail
 {
     display: flex;
@@ -22,7 +25,8 @@
     
 }
 .one-detail img{
-    width: 100%;
+    width: 60%;
+    border: solid black;
 }
 .one-detail p{
     font-size: 20px;

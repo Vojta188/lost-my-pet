@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import "./Detail.css"
 import Navbar from '../components/Navbar'
+import { NavLink } from "react-router-dom"
 
 const Detail = () => {
     const {detailId} = useParams()
@@ -45,7 +46,7 @@ const Detail = () => {
       <Navbar />
       <div className='all-detail'>
       <div className='one-detail'>
-      <img src ={road + file} alt="animal"></img>
+      <img className='one-detail-img' src ={road + file} alt="animal"></img>
       {console.log(road+file)}
       <h2>{name}</h2>
       <p>{rasa}</p>
@@ -55,7 +56,7 @@ const Detail = () => {
       <p>{email}</p>
 
       
-        <button className='btn-local'>Lokalizovat</button>
+       <NavLink to="/map"><button className='btn-local'>Lokalizovat</button></NavLink>
         <button className='btn-my-pet'>Můj mazlíček</button>
       
       </div>

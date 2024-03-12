@@ -6,11 +6,23 @@ import Navbar from '../components/Navbar'
 import { NavLink } from "react-router-dom"
 
 const Detail = () => {
+
+  let styles = {
+    border:'solid black', 
+};
     const {detailId} = useParams()
+    const [borderColor, setBorderColor] = useState(styles)
     const [DataSearch,setDataSearch] = useState([])
     const road = "http://localhost:3000/images/file-"
 
-    
+   
+   const myPet =()=>{
+    setBorderColor( styles = {
+      border:'solid green', 
+  })
+   }
+
+   
 
     const addData = async()=>{
       const data = await fetch("http://localhost:3001/getData");
@@ -46,7 +58,7 @@ const Detail = () => {
       <Navbar />
       <div className='all-detail'>
       <div className='one-detail'>
-      <img className='one-detail-img' src ={road + file} alt="animal"></img>
+      <img style={borderColor}  className='one-detail-img' src ={road + file} alt="animal"></img>
       {console.log(road+file)}
       <h2>{name}</h2>
       <p>{rasa}</p>
@@ -57,7 +69,7 @@ const Detail = () => {
 
       
        <NavLink to="/map"><button className='btn-local'>Lokalizovat</button></NavLink>
-        <button className='btn-my-pet'>Můj mazlíček</button>
+        <button onClick={myPet} className='btn-my-pet'>Můj mazlíček</button>
       
       </div>
       </div>

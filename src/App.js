@@ -3,7 +3,6 @@ import Searching from "./pages/Searching"
 import Search from "./pages/Search"
 import Home from "./pages/Home"
 import Detail from "./pages/Detail"
-import Map from "./pages/Map"
 
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
       <Route path="/searching" element={<Searching />} />
       <Route path="/search" element={<Search />} />
       <Route path="/getData/:detailId" element = {<Detail />} />
-      <Route path = "/map" element = {<Map />}/>
       
       
     </Routes>
